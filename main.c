@@ -26,6 +26,7 @@ void cls(void)
 
 
 void geraArqAleatorio(char* nome_arquivo, int num_registros){
+  //Gera Arquivos aleatorios para o meu caso de testes
   int r;
   FILE* arq = fopen(nome_arquivo, "w");
   if(arq != NULL){
@@ -37,6 +38,7 @@ void geraArqAleatorio(char* nome_arquivo, int num_registros){
   fclose(arq);
 }
 void ordenaArquivo(char* arquivo, int num_registros){
+    //Ordena os arquivos que estiverem no formato especificado "ArquivoN.txt"
     FILE* arq = fopen(arquivo, "r");
     int dados[num_registros];
 
