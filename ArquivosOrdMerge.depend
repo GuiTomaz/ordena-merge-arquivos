@@ -1,0 +1,29 @@
+# depslib dependency file v1.0
+1604111319 source:c:\users\user\documents\projetos c\arquivosordmerge\main.c
+	<stdio.h>
+	<stdlib.h>
+	"ordenacoes.h"
+	<string.h>
+	<windows.h>
+
+1604018478 c:\users\user\documents\projetos c\arquivosordmerge\ordenacoes.h
+
+1604018453 source:c:\users\user\documents\projetos c\arquivosordmerge\ordenacoes.c
+	<stdio.h>
+	<stdlib.h>
+	"ordenacoes.h"
+
+1604101613 source:c:\users\user\documents\projetos c\arquivosordmerge\fila.c
+	<stdlib.h>
+	<stdio.h>
+	"fila.h"
+
+1604101625 c:\users\user\documents\projetos c\arquivosordmerge\fila.h
+
+1601050671 source:c:\users\user\documents\projetos c\arquivosordmerge\pilha.c
+	<stdio.h>
+	<stdlib.h>
+	"pilha.h"
+
+1600827484 c:\users\user\documents\projetos c\arquivosordmerge\pilha.h
+
