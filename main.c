@@ -3,6 +3,7 @@
 #include "ordenacoes.h"
 #include <string.h>
 #include <windows.h>
+#include <time.h>
 void cls(void)
 {
     COORD coordScreen = {0, 0};
@@ -38,7 +39,7 @@ void geraArqAleatorio(char* nome_arquivo, int num_registros){
   fclose(arq);
 }
 void ordenaArquivo(char* arquivo, int num_registros){
-    //Ordena os arquivos que estiverem no formato especificado "ArquivoN.txt"
+    //Ordena os arquivos que estiverem no formato espe
     FILE* arq = fopen(arquivo, "r");
     int dados[num_registros];
 
@@ -64,7 +65,7 @@ void geraArqAleatorioOrdenado(char* nome_arquivo, int num_registros){
   ordenaArquivo(nome_arquivo, num_registros);
 }
 
-void merge(int num_arquivos, int num_registros){
+void merge(int num_arquivos){
   char nome_arq[20];
   FILE* arq[num_arquivos];
   //Abre os arquivos
@@ -140,14 +141,14 @@ int main()
 {   srand(time(NULL));
     char nome_arq[20];
 
-    int num_reg = 50; //num de registros por arquivo "tamanho da particao"
-    int num_arquivos = 10; //Quantidade de arquvios gerados "quantidade de particoes"
+    int num_reg = 5; //num de registros por arquivo "tamanho da particao"
+    int num_arquivos = 3; //Quantidade de arquvios gerados "quantidade de particoes"
 
     for(int k = 0; k<num_arquivos; k++){
       sprintf(nome_arq, "Arquivo%d.txt", k); //formata nome dos arquivos a serem criados
       geraArqAleatorioOrdenado(nome_arq, num_reg);//Gera arquivos aleatorios
     }
-    merge(num_arquivos, num_reg);
+    merge(num_arquivos);
     printf("Carregado!");
     return 0;
 }
