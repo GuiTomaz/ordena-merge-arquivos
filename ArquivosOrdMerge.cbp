@@ -31,10 +31,6 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
-		<Unit filename="fila.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="fila.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -42,10 +38,6 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="ordenacoes.h" />
-		<Unit filename="pilha.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="pilha.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />
